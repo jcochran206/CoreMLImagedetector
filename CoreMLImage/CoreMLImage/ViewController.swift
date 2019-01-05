@@ -9,6 +9,7 @@
 import UIKit
 import CoreML
 import Vision
+import AVFoundation
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -50,6 +51,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
             DispatchQueue.main.async {
                 self?.imageDesc.text = "confidence = \(Int(firstResult.confidence * 100))% \n identifire \(firstResult.identifier)"
+                let text2Speech = AVSpeechUtterance(string: (self?.imageDesc.text)!)
+                text2Speech.voice = AVSpeechSynthesisVoice(language: "en-gb")
+                let synthesizer = AVSpeechSynthesizer()
+                synthesizer.speak(text2Speech)
             }
         }
         
