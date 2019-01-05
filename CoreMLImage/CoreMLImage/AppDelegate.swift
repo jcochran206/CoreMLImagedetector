@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  CoreMLImageDetector
+//  CoreMLImage
 //
-//  Created by Jonathan Cochran on 1/3/19.
+//  Created by Jonathan Cochran on 1/4/19.
 //  Copyright © 2019 Jonathan Cochran. All rights reserved.
 //
 
