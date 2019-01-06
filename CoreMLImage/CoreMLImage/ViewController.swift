@@ -16,6 +16,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var imageViewObject: UIImageView!
     
     @IBOutlet weak var imageDesc: UITextView!
+    
     var imagePicker:UIImagePickerController!
     override func viewDidLoad() {
         super.viewDidLoad()
